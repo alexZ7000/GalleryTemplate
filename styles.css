@@ -20,6 +20,21 @@
     background-color: rgba(0,0,0,0.4);
 }
 
+.modal-xl .modal-content {
+    width: 90%; /* Ajuste a largura desejada */
+    max-width: 90%; /* Ajuste a largura máxima desejada */
+    margin: auto;
+}
+
+.modal-xl .modal-dialog {
+    max-width: none;
+}
+
+.modal-xl .img-fluid {
+    width: 100%;
+    height: auto;
+}
+
 .modal-content {
     position: relative;
     background-color: #fefefe;
