@@ -9,65 +9,67 @@
 </head>
 <body class="bg-dark text-white">
 <div class="container-sm mt-5" style="text-align: center">
-    <a href="index.html"><button class="btn btn-outline-warning btn-lg w-50 text-center"><img src="assets/images/app/left-arrow.png" width="30" height="24" alt="left-arrow"> Voltar</button></a>
+    <a href="index.html">
+        <button class="btn btn-outline-warning btn-lg w-50 text-center">
+            <img src="assets/images/app/left-arrow.png" width="30" height="24" alt="left-arrow"> Voltar
+        </button>
+    </a>
 </div>
 <div class="container mt-5">
     <section>
         <h1 class="text-center text-warning fs-1 border-bottom my-5">
-            Fotos <img class="m-1" src="assets/images/app/image-gallery.png" width="50" alt="image-icon" style="filter: brightness(0) invert(1) sepia(1) hue-rotate(180deg);">
+            Fotos <img class="m-1"
+                       src="assets/images/app/image-gallery.png"
+                       width="50"
+                       alt="image-icon"
+                       style="filter: brightness(0) invert(1) sepia(1) hue-rotate(180deg);">
         </h1>
         <div class="row justify-content-center">
-            <div class="col-md-4">
+            <div class="col-lg-4 mb-3">
                 <ul>
                     <li class="card border-0">
                         <img class="card-img"
                              src="https://cdn.pixabay.com/photo/2016/02/03/20/40/pizza-1177940_1280.jpg"
                              alt=""
-                             onclick="openModal(this)"
-                             style="max-height: 350px;
-                             max-width: 400px;
-                             min-height: 350px;
-                             min-width: 400px;">
+                             onclick="openModal(this)">
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 mb-3">
                 <ul>
                     <li class="card border-0">
                         <img class="card-img"
                             src="https://cdn.pixabay.com/photo/2018/04/25/09/26/eiffel-tower-3349075_1280.jpg"
                             alt=""
-                            onclick="openModal(this)"
-                            style="max-height: 350px;
-                            max-width: 400px;
-                            min-height: 350px;
-                            min-width: 400px;">
+                            onclick="openModal(this)">
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 mb-3">
                 <ul>
                     <li class="card border-0">
                         <img class="card-img"
                              src="https://cdn.pixabay.com/photo/2017/03/03/16/28/statue-of-liberty-2114376_1280.jpg"
                              alt=""
-                             onclick="openModal(this)"
-                             style="max-height: 350px;
-                             max-width: 400px;
-                             min-height: 350px;
-                             min-width: 400px;">
+                             onclick="openModal(this)">
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <div id="modal01" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal01')">&times;</span>
-            <img id="img01" class="modal-img rounded-2 border-0" alt="" src="">
+    <!-- Modal -->
+    <div class="modal" id="modal01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content w-100 h-100">
+                <div class="modal-body">
+                    <span class="close" onclick="closeModal('modal01')">&times;</span>
+                    <img id="img01" class="img-fluid rounded-1 border-0" alt="" src="" >
+                </div>
+            </div>
         </div>
     </div>
+
 
     <section>
         <h1 class="text-center text-warning fs-1 border-bottom my-5">
@@ -79,7 +81,7 @@
                  style="filter: brightness(0) invert(1) sepia(1) hue-rotate(180deg);">
         </h1>
         <div class="row justify-content-center">
-            <div class="col-md-4">
+            <div class="col-lg-4 mb-3">
                 <ul>
                     <li class="card border-0 embed-responsive embed-responsive-16by9">
                         <video controls loop autoplay muted class="rounded-2">
@@ -88,7 +90,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 mb-3">
                 <ul>
                     <li class="card border-0">
                         <video controls loop autoplay muted class="rounded-2">
@@ -97,7 +99,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 mb-3">
                 <ul>
                     <li class="card border-0 embed-responsive embed-responsive-16by9">
                         <iframe class="rounded-2 embed-responsive-item"
